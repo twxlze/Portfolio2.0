@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>    
+        <!-- Navbar-->
+            <nav>
+                <div class="display-flex-row" id="navbar">
+                    <div class="display-flex-row" id="content-MyPortfolio">
+                        <div class="circle">
+                            <span id="M">M</span><span id="L">L</span>
+                        </div>
+                        <h1 class="margin-left" id="text-MyPortfolio"> My portfolio</h1>
+                    </div>
+
+                    <div class="nav-links">
+                        <a href="Accueil.html" class="links">Accueil</a>
+                        <a href="AboutMe.html" class="links">About Me</a>
+                        <a href="" class="links">Projets</a>
+                        <a href="" class="links">CV</a>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </nav>
+    </header>       
+
+</body>
+
+
+<!-- Partie JS -->
+
+<!-- Changement de couleur en fonction de l'activation du lien de la page-->
+<script>
+  const links = document.querySelectorAll('.links');
+  const currentPath = window.location.pathname.split("/").pop(); 
+
+  links.forEach(link => {
+    const linkPath = link.getAttribute("href");
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</html>
