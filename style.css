@@ -2,9 +2,10 @@ body {
   margin: 0;
   background-image: url('Assets/background-image.png');
   font-family: 'Iceberg', sans-serif;
+  color : aliceblue;
 }
 
-.display-flex-row {
+.flex-row {
   display: flex;
   flex-direction: row;
 }
@@ -13,6 +14,31 @@ body {
   margin-left: 0.5em;
 }
 
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.center{
+  justify-items: center;
+}
+
+svg{
+  width: 50%;
+  opacity: 1;
+  color : black ;
+}
+
+
+.padding-right{
+  margin-right: 100px;
+}
+
+.margin-top{
+  margin-top: 5dvh ;
+}
+
+
 /* → -------------- NAVBAR   ---------- */
 
 nav {
@@ -20,7 +46,6 @@ nav {
   background-color: #262626;
   height: 4em;
 }
-
 
 #navbar{
   display: flex;
@@ -41,7 +66,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  }
+}
 
 #M{
   color:#262626
@@ -82,4 +107,92 @@ nav {
   color:#F6586D ;
 }
 
+
+/* → -------------- MAIN   ---------- */
+
+.myName{
+  text-align: center;
+  margin-top: 1em;
+  font-size: 8em;
+}
+
+#sub-line-name{
+  margin-top : -10dvh;
+}
+
+.lune{
+  position : relative;
+  left: 80px;
+  top: -470px;
+}
+
+.line{
+  width: 80dvh;
+  height: 0.5dvh;
+  background-color: aliceblue;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialContainer {
+  width: 7dvh;
+  height: 7dvh;
+  display: flex;
+  border-radius: 5dvh;
+  align-items: center;
+  transition-duration: .5s;
+}
+
+.socialContainer:hover {
+  background-color: #F6586D;
+  transition-duration: .5s;
+}
+
+svg{
+  width: 10dvh;
+}
+
+
+/* email */ 
+
+.email-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  background: transparent;
+  border-radius: 2dvh;
+  padding: 1em 1.5em;
+  color: aliceblue;
+  position: relative;
+  width:70dvh;
+  height: 5dvh;
+  font-family: 'Iceberg', sans-serif;
+}
+
+.email-btn:hover {
+  color: black;
+  transition-delay: 0.1s;
+}
+
+.email-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: aliceblue;
+  transition: 0.2s ease;
+  z-index: -1;
+  border-radius: 2dvh;
+}
+
+.email-btn:hover::after {
+  height: 100%;
+  transition-delay: 0.05s;
+  color: aliceblue;
+}
 
