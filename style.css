@@ -29,8 +29,7 @@ svg{
   color : black ;
 }
 
-
-.padding-right{
+.margin-right{
   margin-right: 100px;
 }
 
@@ -38,6 +37,17 @@ svg{
   margin-top: 5dvh ;
 }
 
+.sub-titles{
+  font-size: 3em;
+}
+
+.width-50{
+  width: 50%;
+}
+
+.width-35{
+  width: 35%;
+}
 
 /* → -------------- NAVBAR   ---------- */
 
@@ -124,6 +134,7 @@ nav {
   position : relative;
   left: 80px;
   top: -470px;
+  margin-bottom: -40dvh;
 }
 
 .line{
@@ -195,4 +206,67 @@ svg{
   transition-delay: 0.05s;
   color: aliceblue;
 }
+
+/* Zone profil */
+
+#technologies-line{
+  width: 25em;
+  margin-left: 1em;
+  margin-top: -9dvh;
+  height: 1em;
+  border-radius: 0%;
+  background-color: #F6586D;
+  z-index: -1;
+  margin-bottom: -5dvh;
+}
+
+
+/* */
+.card-technologies {
+  padding: 2em;
+  border: 1px solid black;
+  border : none;
+  overflow: hidden;
+}
+
+.slider-technologies { /* Elements qui déroulent */
+  width: 85dvh;
+  height: var(--height);
+  overflow: hidden;
+  --width: 15em;
+  --height: 15em;
+  --quantity: 4;
+}
+
+.slider-technologies .list-technologies {
+  display: flex;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+
+.slider-technologies .list-technologies .item-technologies {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  animation-delay: calc(
+    (10s / var(--quantity)) * (var(--position) - 1) - 10s
+  ) !important;
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+.slider-technologies:hover .item-technologies {
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+}
+
+
 
