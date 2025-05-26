@@ -3,6 +3,7 @@ body {
   background-image: url('Assets/background-image.png');
   font-family: 'Iceberg', sans-serif;
   color : aliceblue;
+  overflow-x: hidden;
 }
 
 .flex-row {
@@ -149,6 +150,7 @@ nav {
   top : -2.8em;
   text-shadow: 2px 2px 4px aliceblue;
   margin-bottom: -2em;
+  overflow-x: hidden;
 }
 
 .line{
@@ -310,8 +312,17 @@ svg{
   display: flex;
   justify-self: center;
   position : relative;
-  top: -1100px;
+  top: -900px;
   width: 15%;
   opacity: 0.7;
   filter: invert();
+}
+
+#bat-center{
+  display: flex;
+  justify-content: center;
+}
+
+#bat2{
+  transform : rotate(180deg);
 }
