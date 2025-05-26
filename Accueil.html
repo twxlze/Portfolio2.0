@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <img src="Assets/lune.png" class="lune" alt="">
+        <img src="Assets/lune.png" id="lune" alt="">
 
         <!-------- →  Zone description profil -->
 
@@ -124,9 +124,18 @@
                             </div>
                             
                             <!-- Troisème ligne -->
-                            <div class="tooltip" data-tooltip="FIGMA">
-                                <img src="Assets/figma.png" class="technologies" alt="logo de Figma">
+                            <div class="flex-row">
+                                <div class="tooltip" id="exception-tooltip" data-tooltip="MySQL">
+                                    <img src="Assets/sql.png" class="technologies" alt="logo SQL" alt="logo de SQL">
+                                </div>
+                                <div class="tooltip" id="exception-tooltip" data-tooltip="PL/SQL">
+                                        <img src="Assets/plsql.png" class="technologies" alt="logo de PL/SQL">
+                                </div>
+                                <div class="tooltip" id="exception-tooltip" data-tooltip="BASH">
+                                    <img src="Assets/bash.png" class="technologies" alt="logo de Bash">
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -140,12 +149,8 @@
                             <!-- Première ligne -->
                             <div class="center">
                                 <div class="flex-row">
-                                    <div class="tooltip" id="exception-tooltip" data-tooltip="MySQL">
-                                        <img src="Assets/sql.png" class="technologies" alt="logo SQL" alt="logo de SQL">
-                                    </div>
-                                    <div class="tooltip" id="exception-tooltip" data-tooltip="PL/SQL">
-                                        <img src="Assets/plsql.png" class="technologies" alt="logo de PL/SQL">
-                                    </div>
+
+                                    
                                 </div>
                             </div>
 
@@ -157,20 +162,28 @@
                                 <div class="tooltip" id="exception-tooltip" data-tooltip="Visual Paradigm">
                                     <img src="Assets/visual-paradigm.png" class="technologies" alt="logo de Visual Paradigm">
                                 </div>
-                                <div class="tooltip" id="exception-tooltip" data-tooltip="BASH">
-                                    <img src="Assets/bash.png" class="technologies" alt="logo de Bash">
-                                </div>
+                                
                             </div>
                             
                             <!-- Troisème ligne -->
-                            <div class="tooltip" data-tooltip="AFTER EFFECTS">
-                                <img src="Assets/ae.png" class="technologies" alt="logo d'After Effects">
+                            <div class="flex-row">
+                                <div class="tooltip" data-tooltip="AFTER EFFECTS">
+                                    <img src="Assets/ae.png" class="technologies" alt="logo d'After Effects">
+                                </div>
+                                <div class="tooltip" data-tooltip="FIGMA">
+                                    <img src="Assets/figma.png" class="technologies" alt="logo de Figma">
+                                </div>
+                            </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
             </div> 
+        </div>
+
+        <div id="text">
+            <h2> Coucou</h2>
         </div>
 
 
@@ -183,5 +196,6 @@
 
 <!-- Changement de couleur en fonction de l'activation du lien de la page-->
 <script src="active-link.jsx"></script>
+<script src="parallax.js"></script>
 
 </html>

@@ -49,6 +49,7 @@ svg{
   width: 35%;
 }
 
+
 .margin{ /* Correspond au cadre */
   filter :brightness(5);
   z-index: -1;
@@ -134,7 +135,7 @@ nav {
   margin-top : -10dvh;
 }
 
-.lune{
+#lune{
   position : relative;
   left: 80px;
   top: -470px;
