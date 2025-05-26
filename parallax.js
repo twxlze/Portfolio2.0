@@ -1,6 +1,7 @@
 let lune = document.getElementById('lune');
 let forest = document.getElementById('forest-font');
 let love = document.getElementById('love');
+let bat = document.getElementById('batbat');
 
 
 
@@ -12,6 +13,5 @@ window.addEventListener('scroll', () => {
 
 
     forest.style.marginTop = value * -1 + 'px';
-
 
 });
