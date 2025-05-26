@@ -39,6 +39,7 @@ svg{
 
 .sub-titles{
   font-size: 3em;
+  margin-top: 10dvh;
 }
 
 .width-50{
@@ -230,7 +231,6 @@ svg{
   border-radius: 0%;
   background-color: #F6586D;
   z-index: -1;
-  margin-bottom: -5dvh;
 }
 
 
