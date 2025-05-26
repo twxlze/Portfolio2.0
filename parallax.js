@@ -1,5 +1,5 @@
 let lune = document.getElementById('lune');
-let navbar = document.getElementById('navbar');
+let forest = document.getElementById('forest-font');
 
 
 window.addEventListener('scroll', () => {
@@ -7,6 +7,7 @@ window.addEventListener('scroll', () => {
     lune.style.marginTop = value * -0.5 + 'px';
     lune.style.marginLeft = value * -0.5 + 'px';
 
-    navbar.style.marginTop = value * -0.5 + 'px';
+    forest.style.marginTop = value * -1 + 'px';
+
 
 });

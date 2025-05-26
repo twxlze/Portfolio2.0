@@ -49,11 +49,6 @@ svg{
   width: 35%;
 }
 
-
-.margin{ /* Correspond au cadre */
-  filter :brightness(5);
-  z-index: -1;
-}
 /* → -------------- NAVBAR   ---------- */
 
 nav {
@@ -280,4 +275,20 @@ svg{
   position: relative;
   top : -79dvh;
   z-index: 1;
+}
+
+.frame{ /* Correspond au cadre */
+  filter :brightness(5);
+  z-index: -1;
+}
+
+#forest-font{
+  width: 100%;
+  filter: grayscale(1);
+  filter: brightness(2);
+  filter: saturate(0);
+  opacity: 0.3;
+  filter: blur(0.3em);
+  position: relative;
+  top : -600px;
 }
