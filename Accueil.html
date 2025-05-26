@@ -182,16 +182,6 @@
 <!-- Partie JS -->
 
 <!-- Changement de couleur en fonction de l'activation du lien de la page-->
-<script>
-  const links = document.querySelectorAll('.links');
-  const currentPath = window.location.pathname.split("/").pop(); 
-
-  links.forEach(link => {
-    const linkPath = link.getAttribute("href");
-    if (linkPath === currentPath) {
-      link.classList.add("active");
-    }
-  });
-</script>
+<script src="active-link.jsx"></script>
 
 </html>
