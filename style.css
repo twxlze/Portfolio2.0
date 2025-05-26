@@ -191,7 +191,8 @@ svg{
   font-size: 17px;
   background: transparent;
   border-radius: 2dvh;
-  padding: 1em 1.5em;
+  border: 3px dashed aliceblue;
+
   color: aliceblue;
   position: relative;
   width:70dvh;
