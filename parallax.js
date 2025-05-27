@@ -13,5 +13,4 @@ window.addEventListener('scroll', () => {
 
 
     forest.style.marginTop = value * -1 + 'px';
-
 });

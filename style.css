@@ -309,21 +309,36 @@ svg{
   top : -600px;
 }
 
-.bat{
+.wave{
+  width: 100%;
+  margin-top: -50em;
+  position: relative;
+  top : -20em;
+  filter:saturate(2);
+  filter: blur(1em);
+  height: 1300%;
+}
+
+#arrow{
+  width: 3em;
+  animation : bounce 1s ease-in-out infinite;
+  position: relative;
   display: flex;
   justify-self: center;
-  position : relative;
-  top: -900px;
-  width: 15%;
-  opacity: 0.7;
-  filter: invert();
+  margin-top: -55dvh;
 }
 
-#bat-center{
-  display: flex;
-  justify-content: center;
+@keyframes bounce {
+  0%{
+    top : 2em;
+  }
+   
+  50% {
+    top: 3em;
+  }
+
+  100% {
+    top: 2em;
+  }
 }
 
-#bat2{
-  transform : rotate(180deg);
-}
