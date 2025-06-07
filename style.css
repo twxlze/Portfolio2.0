@@ -52,6 +52,22 @@ svg{
   width: 35%;
 }
 
+.margin-test{
+  margin-top: 65dvh;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 4dvh solid transparent;
+  border-right: 5dvh solid transparent;
+  border-top: 10dvh solid aliceblue;
+  transform: rotate(153deg);
+  display: flex;
+  justify-self: flex-end;
+  margin-right:50dvh;
+  margin-top: -20dvh;
+}
 /* → -------------- NAVBAR   ---------- */
 
 nav {
@@ -348,7 +364,7 @@ svg{
 
 #career-subline{
   width: 15em;
-  margin-left: 1.2em;
+  margin-left: 2.2em;
   margin-top: -9dvh;
   height: 1em;
   border-radius: 0%;
