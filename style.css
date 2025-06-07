@@ -70,7 +70,7 @@ svg{
   margin-top: -20dvh;
 }
 
-.aliceblue-bloc{
+#aliceblue-bloc{
   height: 50dvh;
   width: 100%;
   background-color: aliceblue;
@@ -387,12 +387,12 @@ svg{
   width: 50%;
   height: 2dvh;
   border-radius:20%;
-  z-index: -2;
+  z-index: 2;
 }
 
 #career-circles{
   justify-content: space-around;
-  padding-left: 27%;
+  padding-left: 40%;
   padding-right: 27%;
   z-index: 1;
   text-align: center;
@@ -402,12 +402,27 @@ svg{
   width: 25dvh;
   height: 25dvh;
   margin-top: -12dvh;
+  z-index: 1;
 }
 
 #text-career{
   z-index: 2;
   color: #F6586D;
 }
+
+#font-2{
+  opacity: 20%;
+  height: 40dvh;
+  width: 150%;
+  margin-top: -20dvh;
+  z-index: -1;
+  display: flex;
+  justify-self: center;
+  margin-left: -250dvh;
+}
+
+
+/* */
 
 #mcdo{
   width: 60dvh;
@@ -417,4 +432,8 @@ svg{
   font-size: 4dvh;
   margin-top: 12dvh;
   margin-left: 5dvh;
+}
+
+#mycareer{
+  margin-right: -170dvh;
 }
