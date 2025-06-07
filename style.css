@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-image: url('Assets/background-image.png');
+ /* background-image: url('Assets/background-image.png'); */
+ background-color: #262626;
   font-family: 'Iceberg', sans-serif;
   color : aliceblue;
   overflow-x: hidden;
@@ -181,6 +182,28 @@ svg{
   width: 10dvh;
 }
 
+#arrow{
+  width: 3em;
+  animation : bounce 1s ease-in-out infinite;
+  position: relative;
+  display: flex;
+  justify-self: center;
+  margin-top: -55dvh;
+}
+
+@keyframes bounce {
+  0%{
+    top : 2em;
+  }
+   
+  50% {
+    top: 3em;
+  }
+
+  100% {
+    top: 2em;
+  }
+}
 
 /* email */ 
 
@@ -315,30 +338,47 @@ svg{
   position: relative;
   top : -20em;
   filter:saturate(2);
-  filter: blur(1em);
+  filter: blur(0.2em);
   height: 1300%;
+  margin-bottom: -40dvh;
+  filter: brightness(10);
 }
 
-#arrow{
-  width: 3em;
-  animation : bounce 1s ease-in-out infinite;
-  position: relative;
-  display: flex;
-  justify-self: center;
-  margin-top: -55dvh;
+
+
+#career-subline{
+  width: 15em;
+  margin-left: 1.2em;
+  margin-top: -9dvh;
+  height: 1em;
+  border-radius: 0%;
+  background-color: #F6586D;
+  z-index: -1;
 }
 
-@keyframes bounce {
-  0%{
-    top : 2em;
-  }
-   
-  50% {
-    top: 3em;
-  }
-
-  100% {
-    top: 2em;
-  }
+#career-line{
+  margin-top: 20dvh;
+  width: 50%;
+  height: 2dvh;
+  border-radius:20%;
+  z-index: -2;
 }
 
+#career-circles{
+  justify-content: space-around;
+  padding-left: 27%;
+  padding-right: 27%;
+  z-index: 1;
+  text-align: center;
+}
+
+#left-circle, #right-circle{
+  width: 25dvh;
+  height: 25dvh;
+  margin-top: -12dvh;
+}
+
+#text-career{
+  z-index: 2;
+  color: #F6586D;
+}
