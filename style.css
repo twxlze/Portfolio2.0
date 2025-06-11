@@ -316,6 +316,53 @@ svg{
 }
 
 
+/* Projets */
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  height: 80dvh;
+  margin-bottom: 20dvh;
+  margin-top: 10dvh;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+#project-subline{
+  width: 11em;
+  margin-left: 2.2em;
+  margin-top: -9dvh;
+  height: 1em;
+  border-radius: 0%;
+  background-color: #F6586D;
+  z-index: -1;
+}
 
 /* Technolgoies utilisées */
 
@@ -414,6 +461,9 @@ svg{
   filter: brightness(10);
 }
 
+#reverse-separator{
+  transform: rotate(180deg);
+}
 
 
 #career-subline{
