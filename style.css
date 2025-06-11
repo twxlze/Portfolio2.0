@@ -268,7 +268,56 @@ svg{
   color: aliceblue;
 }
 
-/* Zone profil */
+/* ------- Zone profil -------- */
+
+/* Description */ 
+.box-description {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ justify-self: center;
+ margin-top: -15dvh;
+ margin-bottom: -15dvh;
+}
+
+
+.box-description::after {
+ content: '';
+ position: absolute;
+ width: 70%;
+ height: 25%;
+ transform: skewX(15deg);
+ transition: 0.5s;
+ filter: blur(30px);
+}
+
+.box-description:hover:before,
+.box-description:hover:after {
+ transform: skewX(0deg) scaleX(1.3);
+}
+
+.box-description:before,
+.box-description:after {
+ background: linear-gradient(315deg, #3f3f3f, aliceblue)
+}
+
+.box-description h2 {
+ font-size: 20px;
+ color: rgb(41, 41, 41);
+ margin-bottom: 10px;
+ z-index: 2;
+ transition: 0.5s;
+ padding: 40dvh;
+}
+
+.box-description h2:hover {
+ transform: skewX(0deg) scaleX(1.3);
+}
+
+
+
+/* Technolgoies utilisées */
 
 #technologies-line{
   width: 25em;
@@ -421,6 +470,7 @@ svg{
 #mcdo{
   width: 60dvh;
   z-index: 2;
+  margin-top: -10dvh;
 }
 
 #text-exp{
@@ -453,3 +503,4 @@ svg{
     z-index: -1;
     opacity: 0.3;
 }
+
